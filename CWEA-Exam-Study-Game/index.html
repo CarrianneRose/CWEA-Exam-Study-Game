@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Quality Lab Day Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen">
+        <h1>Welcome to the Water Quality Lab!</h1>
+        <p>You are about to begin a day as a lab analyst. Your mission is to follow procedures, complete tests, and ensure quality control throughout the day.</p>
+        <button class="button" onclick="startLabDay()">Get Started</button>
+    </div>
+
+    <div id="sample-login" class="hidden">
+        <div class="stage">
+            <h2>1. Sample Receiving and Login</h2>
+            <p>Start your day by receiving, inspecting, and logging in samples. Decide whether to accept or reject them based on conditions.</p>
+            <div id="question-container"></div>
+        </div>
+    </div>
+
+    <div id="congrats-screen" class="hidden">
+        <div class="stage">
+            <h2>💕You did it!!💕</h2>
+            <p>You’ve completed the Sample Receiving and Login step successfully.</p>
+            <p><strong>Fun Fact:</strong> <span id="fun-fact"></span></p>
+            <button class="button" onclick="goToNextStage()">Continue to Safety and Setup</button>
+        </div>
+    </div>
+
+ <div id="safety-setup" class="hidden">
+    <div class="stage">
+      <h2>2. Safety and Setup</h2>
+      <p>Before beginning lab work, it's essential to ensure personal and environmental safety. Let’s go through a quick safety check.</p>
+      <div id="safety-question-container"></div>
+    </div>
+  </div>
+
+  <div id="safety-congrats" class="hidden">
+  <div class="stage">
+    <h2>💕Nice Job!!💕</h2>
+    <p>You’ve completed the Safety and Setup step successfully.</p>
+    <p><strong>Fun Fact:</strong> <span id="safety-fun-fact"></span></p>
+    <button class="button" onclick="goToEquipmentCalibration()">Continue to Equipment Calibration</button>
+  </div>
+</div>
+  
+  <div id="equipment-calibration" class="hidden">
+    <div class="stage">
+      <h2>3. Equipment Calibration</h2>
+      <p>Welcome to the Equipment Calibration stage. This section will ensure your instruments are ready for use.</p>
+    <div id="equipment-question-container"></div>
+    </div>
+  </div>
+
+  <div id="equipment-congrats" class="hidden">
+  <div class="stage">
+    <h2>💕Hell Yeah!💕</h2>
+    <p>You’ve completed the Equipment Calibration step successfully.</p>
+    <p><strong>Fun Fact:</strong> <span id="equipment-fun-fact"></span></p>
+    <button class="button" onclick="goToBODtest()">Continue to BOD Test</button>
+  </div>
+</div>
+
+    <div id="bod-test" class="hidden">
+    <div class="stage">
+      <h2>4. BOD Test</h2>
+      <p>Welcome to the BOD Test stage. This section will ensure you can properly perform and analyze the BOD test protocol.</p>
+    <div id="bod-question-container"></div>
+    </div>
+  </div>
+
+  <div id="bod-congrats" class="hidden">
+  <div class="stage">
+    <h2>💕Hell Yeah!💕</h2>
+    <p>You’ve completed the BOD Test step successfully.</p>
+    <p><strong>Fun Fact:</strong> <span id="bod-fun-fact"></span></p>
+    <button class="button" onclick="goToTSSTVSStest()">Continue to TSS/TVSS Test</button>
+  </div>
+</div>
+
+  <div id="tsstvss-test" class="hidden">
+  <div class="stage">
+    <h2>5. TSS/TVSS Test</h2>
+    <p>Welcome to the TSS/TVSS Test stage. This section will ensure you can properly perform and analyze the TSS and TVSS test protocols.</p>
+    <div id="tsstvss-question-container"></div>
+  </div>
+</div>
+
+<div id="tsstvss-congrats" class="hidden">
+  <div class="stage">
+    <h2>💕Hell Yeah!💕</h2>
+    <p>You’ve completed the TSS/TVSS Test step successfully.</p>
+    <p><strong>Fun Fact:</strong> <span id="tsstvss-fun-fact"></span></p>
+    <button class="button" onclick="goTopHtest()">Continue to pH and Conductivity Test</button>
+  </div>
+</div>
+
+<div id="pH-conductivity-test" class="hidden">
+  <div class="stage">
+    <h2>6. pH and Conductivity Test</h2>
+    <p>Welcome to the pH and Conductivity Test stage. This section will ensure you can properly perform and analyze the pH and Conductivity test protocols.</p>
+    <div id="pH-question-container"></div>
+  </div>
+</div>
+
+
+    <!-- Additional stages go here -->
+
+    <script src="script.js"></script>
+</body>
+</html>
