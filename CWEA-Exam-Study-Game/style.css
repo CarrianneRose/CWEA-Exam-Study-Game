@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f8;
+    margin: 20px;
+}
+
+.stage {
+    background-color: #ffffff;
+    border: 2px solid #008080;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #008080;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.hidden {
+    display: none;
+}
+
+.question {
+    margin-top: 15px;
+}
+
+.answer {
+    display: block;
+    margin: 5px 0;
+    padding: 8px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.correct {
+    background-color: #c7f5d9;
+    border-color: #28a745;
+}
+
+.incorrect {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+}
+
+.feedback {
+    font-style: italic;
+    margin-top: 5px;
+}
